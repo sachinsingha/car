@@ -1,0 +1,129 @@
+
+<!-- saved from url=(0033)http://127.0.0.1:5500/index.html# -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>
+            Website for ESD 
+        </title>
+        <link rel="stylesheet" href="./Website for ESD_files/index.css">
+    </head>
+    <body>
+        <div class="main">
+            <nav>
+<div class="logo">
+    <img src="./Website for ESD_files/IMG_20230729_152247.png">
+</div>
+<div class="nav-links">
+    <ul>
+        <li><a href="http://127.0.0.1:5500/index.html#">Home</a></li>
+        <li><a href="http://127.0.0.1:5500/index.html#">PROGRAM</a></li>
+        <li><a href="http://127.0.0.1:5500/index.html#">Any</a></li>
+        <li><a href="http://127.0.0.1:5500/index.html#">About</a></li>
+    </ul>
+</div>
+            </nav>
+            <div class="information">
+                <div class="overlay"></div>
+                <img src="./Website for ESD_files/Screenshot (61).png" class="Chakra">
+                <div id="circle" style="transform: rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg) rotate(-90deg);">
+                    <div class="feature one">
+                        <img src="./Website for ESD_files/tesla-9-logo.png">
+                        <div>
+                            <h>TESLA
+                        <p>Tesla is making EV(electric cars).<br>Owner name is Elon Musk</p>
+                        </h></div>
+                    </div>
+                    <div class="feature two">
+                    <img src="./Website for ESD_files/jaguar-cars-logo.png">
+                    <div>
+                        <h1>Jaguar</h1>
+                        <p>Jaguar is luxury car brand.<br>
+                        Owner name is Ratan Tata</p>
+                    </div>
+                </div>
+
+                    <div class="feature three">
+                        <img src="./Website for ESD_files/Mahindra-Mahindra-New-Logo.png">
+                        <div>
+                            <h1>Mahindra</h1>
+                        <p>Mahindra is Indian origin car company.<br>
+                        Owner name is Anand Mahindra</p>
+                        </div>
+                    </div>
+                    <div class="feature four">
+                        <img src="./Website for ESD_files/mercedes-benz-2-logo.png">
+                        <div>
+                            <h1>Mercedes</h1>
+                        <p>It is luxury car comapny.
+                            <br>
+                            Owner name is Daimler AG
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="control">
+                    <img src="./Website for ESD_files/images (1).png" id="up8tn">
+                    <h3>Control</h3>
+                    <img src="./Website for ESD_files/images (1).png" id="down8tn">
+                </div>
+            </div>
+        </div>
+        <script lang="Javascript">
+            var circle = document.getElementById("circle");
+            var up8tn = document.getElementById("up8tn");
+            var down8tn = document.getElementById("down8tn");
+
+            var rotate=circle.style.transform;
+            var rotatevalue;
+            up8tn.onclick=function(){
+                rotatevalue=rotate+"rotate(-90deg)";
+                circle.style.transform=rotatevalue;
+                rotate=rotatevalue;
+            }
+            down8tn.onclick=function(){
+                rotatevalue=rotate+"rotate(90deg)";
+                circle.style.transform=rotatevalue;
+                rotate=rotatevalue;
+            }
+        </script>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
